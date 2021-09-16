@@ -15,13 +15,6 @@
         "type": "image/png",
         "purpose": "any maskable"
 
-    },
-    {
-        "src": "img/icons/icon-180x180.png",
-        "sizes": "180x180",
-        "type": "image/png",
-        "purpose": "any maskable"
-
     }],
     "start_url" : "/index.html",
     "display" : "standalone",
