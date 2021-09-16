@@ -1,0 +1,48 @@
+@import 'mixin'
+$color_overlay: rgba(186, 0, 0, 0.768)
+$color_text: white
+$color_header: black
+$position_text: center
+$color_button: #ffc371
+    
+body 
+  background: $color_text
+
+
+#button
+    &--addon1 
+        color: $color_button
+
+
+
+.awsome
+    display: inline-block
+    color: $color_button
+    font-size: 1.50rem
+
+
+
+.form
+    &--control
+        font-size: 0.95rem
+        border: 0
+        box-shadow: 1rem
+
+
+
+.form
+    &--control
+        box-shadow: none
+
+h6
+    @include font_p
+    @include footer_style
+    
+.menu_footer
+    @include font_p
+    list-style: none
+    text-align: center
+
+
+
+    

@@ -1,0 +1,46 @@
+@import 'mixin'
+@import 'mediaQuerry'
+$color_overlay: rgba(186, 0, 0, 0.768)
+$color_text: white
+$color_header: black
+$position_text: center
+$color_button: #ffc371
+
+  
+.row 
+  display: flex
+  flex-wrap: wrap
+  padding: 0 4px
+
+
+.column 
+  flex: 25%
+  max-width: 25%
+  padding: 0 4px
+
+
+.imgfluid
+  margin-top: 8px
+  vertical-align: middle
+  width: 100%
+
+@media screen and (max-width: 800px) 
+  .column 
+    flex: 50%
+    max-width: 50%
+ 
+
+@media screen and (max-width: 600px) 
+  .column 
+    flex: 100%
+    max-width: 100%
+
+  
+
+h2
+  text-align: $position_text
+  @include font_p
+  
+hr
+  @include barre_position
+

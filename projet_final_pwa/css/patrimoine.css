@@ -1,0 +1,62 @@
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.patrimoine {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.patrimoine:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nature {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.detail {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+h2 {
+  text-transform: none;
+  text-align: center;
+  color: black;
+  font-family: EB Garamond;
+}
+
+p {
+  text-indent: 50px;
+  letter-spacing: 3px;
+  font-family: EB Garamond;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+hr {
+  border-width: 3rem;
+  background-color: gray;
+  height: 2px;
+}

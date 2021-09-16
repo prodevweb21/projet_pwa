@@ -1,0 +1,37 @@
+body {
+  background: white;
+}
+
+#button--addon1 {
+  color: #ffc371;
+}
+
+.awsome {
+  display: inline-block;
+  color: #ffc371;
+  font-size: 1.5rem;
+}
+
+.form--control {
+  font-size: 0.95rem;
+  border: 0;
+  box-shadow: 1rem;
+}
+
+.form--control {
+  box-shadow: none;
+}
+
+h6 {
+  font-family: EB Garamond;
+  font-style: text-uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu_footer {
+  font-family: EB Garamond;
+  list-style: none;
+  text-align: center;
+}

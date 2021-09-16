@@ -1,0 +1,14 @@
+p {
+  font-family: EB Garamond;
+}
+
+h3 {
+  font-family: EB Garamond;
+  text-align: center;
+}
+
+hr {
+  border-width: 3rem;
+  background-color: gray;
+  height: 2px;
+}

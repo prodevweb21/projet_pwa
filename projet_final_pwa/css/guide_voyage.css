@@ -1,0 +1,45 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  margin: auto;
+}
+
+.ajout {
+  margin: auto;
+  border: double;
+  border-radius: 0.5rem;
+  outline-offset: 11px;
+}
+
+p {
+  font-family: EB Garamond;
+}
+
+.zao {
+  margin: auto;
+  width: 60%;
+}
+
+hr {
+  border-width: 3rem;
+  background-color: gray;
+  height: 2px;
+}
+
+.carte_du_maroc {
+  width: 100%;
+}
+
+h5 {
+  text-align: center;
+  font-family: EB Garamond;
+}
