@@ -1,0 +1,10 @@
+{
+
+    "name" : "DemoPWA",
+    "short_name" : "DemoVille",
+    "icons" : [],
+    "start_url" : "/index.html",
+    "display" : "standalone",
+    "background_color" : "#FFF",
+    "theme_color" : "#F2F4F4"
+}
