@@ -31,12 +31,14 @@
         deferredInstallPrompt.userChoice
         .then((choice) => {
         if (choice.outcome === 'accepted') {
+            installButton.setAttribute('hidden', true);
         console.log('Usager a accepté l\'installation de la PWA', choice);
         } else {
         console.log('L\'usager a refusé l\'installation', choice);
         }
-        deferredInstallPrompt = null;
+        
         });
+        deferredInstallPrompt = null;
        }
        
 
@@ -45,15 +47,10 @@
     // Add event listener for appinstalled event
     window.addEventListener('appinstalled', logAppInstalled);
 
-    /**
-     * Event handler for appinstalled event.
-     * Log the installation to analytics or save the event somehow.
-     *
-     * @param {Event} evt
-     */
     function logAppInstalled(evt) {
         // Add code to log the event
-        console.log('Weather App was installed.', evt)
+        console.log(' App was installed.', evt);
+        installButton.setAttribute('hidden', true);
 
     }
     
