@@ -1,7 +1,8 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v3';
+const CACHE_NAME = 'static-cache-v4';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
+    "offline.html",
     "index.html",
     "gastronomies.html",
     "activites.html",
@@ -93,7 +94,21 @@ const FILES_TO_CACHE = [
         self.addEventListener('fetch', (evt) => {
         console.log('[ServiceWorker] Fetch', evt.request.url);
         //Add fetch event handler here.
-        })
+        if (evt.request.mode !== 'navigate') {
+            // Not a page navigation, bail.
+            return;
+            }
+            evt.respondWith(
+            fetch(evt.request)
+            .catch(() => {
+            return caches.open(CACHE_NAME)
+            .then((cache) => {
+           return cache.match('/projet_pwa/projet_final_pwa/offline.html' );
+            });
+            })
+            );
+           
+        });
 
         // Register service worker.
         if ('serviceWorker' in navigator) {
