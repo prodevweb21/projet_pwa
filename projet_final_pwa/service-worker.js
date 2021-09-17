@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v6';
+const CACHE_NAME = 'static-cache-v7';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     "offline.html",
@@ -9,6 +9,7 @@ const FILES_TO_CACHE = [
     "patrimoine.html",
     "guide_voyage.html",
     "js/validation.js",
+    "js/install.js",
     "img/nature7.jpg",
     "img/nature6.jpg",
     "img/nature5.jpg",
