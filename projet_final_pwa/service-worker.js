@@ -4,7 +4,7 @@ const CACHE_NAME = 'static-cache-v1';
 const FILES_TO_CACHE = [
     "index.html",
     "gastronomies.html",
-    "activites.hyml",
+    "activites.html",
     "patrimoine.html",
     "guide_voyage.html",
     "js/validation.js",
