@@ -10,7 +10,7 @@
 
     },    
     {
-        "src": "prodevweb21.github.io/projet_pwa/projet_final_pwa/img/icons/icon-512x512.png",
+        "src": "prodevweb21.github.io/projet_pwa/projet_final_pwa/icons/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
