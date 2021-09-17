@@ -3,14 +3,14 @@
     "name" : "DemoPWA",
     "short_name" : "DemoVille",
     "icons" : [{
-        "src": "/prodevweb21.github.io/projet_pwa/projet_final_pwa/img/icons/icon-192x192.png",
+        "src": "/prodevweb21.github.io/projet_pwa/projet_final_pwa/index.html/img/icons/icon-192x192.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any maskable"
 
     },    
     {
-        "src": "/prodevweb21.github.io/projet_pwa/projet_final_pwa/img/icons/icon-512x512.png",
+        "src": "/prodevweb21.github.io/projet_pwa/projet_final_pwa/index.html/img/icons/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
