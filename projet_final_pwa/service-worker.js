@@ -7,14 +7,12 @@ const FILES_TO_CACHE = [
     "activites.hyml",
     "patrimoine.html",
     "guide_voyage.html",
-    "validation.js",
+    "js/validation.js",
     
 
 
 ];
 
-
-   
     self.addEventListener('install', (evt) => {
         console.log('[ServiceWorker] Install');
     // Precache static resources here.
