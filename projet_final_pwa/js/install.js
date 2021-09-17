@@ -20,10 +20,31 @@
     * @param {Event} evt
     */
     function installPWA(evt) {
-        // CODELAB: Add code show install prompt & hide the install button.
-        // CODELAB: Log user response to prompt.
-    }
-    // CODELAB: Add event listener for appinstalled event
+        
+        // Add code show install prompt & hide the install button.
+        deferredInstallPrompt.prompt();
+        // Hide the install button, it can't be called twice.
+        evt.srcElement.setAttribute('hidden', true);
+
+
+        //Log user response to prompt.
+        deferredInstallPrompt.userChoice
+        .then((choice) => {
+        if (choice.outcome === 'accepted') {
+        console.log('Usager a accepté l\'installation de la PWA', choice);
+        } else {
+        console.log('L\'usager a refusé l\'installation', choice);
+        }
+        deferredInstallPrompt = null;
+        });
+       }
+       
+
+
+   
+    // Add event listener for appinstalled event
+    window.addEventListener('appinstalled', logAppInstalled);
+
     /**
      * Event handler for appinstalled event.
      * Log the installation to analytics or save the event somehow.
@@ -31,6 +52,8 @@
      * @param {Event} evt
      */
     function logAppInstalled(evt) {
-        // CODELAB: Add code to log the event
+        // Add code to log the event
+        console.log('Weather App was installed.', evt)
+
     }
     
