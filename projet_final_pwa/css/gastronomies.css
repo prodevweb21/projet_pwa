@@ -51,11 +51,6 @@ p {
   font-family: EB Garamond;
 }
 
-@media screen and (max-width: 325px) {
-  h5 {
-    font-size: 0.45rem;
-  }
-}
 @media screen and (min-width: 411px) {
   h5 {
     font-size: 0.5rem;
